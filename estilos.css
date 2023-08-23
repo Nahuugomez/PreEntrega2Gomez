@@ -1,0 +1,383 @@
+*{
+    box-sizing: border-box; 
+}
+        /*Inicio del Header*/
+body{
+    font-family: 'lora';
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 1.7em;}
+p{font-size: 1em;}
+ul{list-style: none;}
+li{font-size: 1em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(0,0,0,0.5);
+    box-shadow: 2px 2px 5px;
+    color: white;
+    background-color: rgb(67, 115, 187);
+}
+
+button:hover{
+    background-color: rgb(27, 61, 110);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color:rgb(67, 115, 187) ;}
+
+header{
+    background-color: rgb(67, 115, 187);
+    margin: 0;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 2.5em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    justify-content: right;
+}
+
+nav{
+    text-align:center
+}
+
+.navbar{
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+nav a:hover{
+    color: white
+}
+        /*Fin del header*/
+
+        /*Inicio del Hero*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+        /* Fin del Hero*/
+
+        /* Inicia Quienes Somos*/
+#quienes-somos .container{
+    text-align: center;
+    padding: 100px 10px;
+}
+        /* Finaliza Quienes Somos*/
+
+        /* Inicia Servicios*/
+#servicios{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#servicios .container{
+    padding: 60px 10px;
+}
+
+#servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#servicios p{
+    display: none;
+}
+
+.carta1{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/impresora.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.carta2{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/polaroids.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.carta3{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("imagenes/impresion3d.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+        /* Finaliza Servicios*/
+
+        /* Inicia Clientes*/
+#clientes .container{
+    text-align: center;
+    padding: 250px 15px;
+}
+
+#clientes .nuestros-clientes{
+    background-image: linear-gradient(
+        0deg
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/clientes.jpg");
+}
+
+#clientes h2{
+    color: white;
+    text-align:  center center;
+}
+
+#clientes p{
+    color: white;
+    text-align: center center;
+}
+
+#clientes li{
+    margin: 12px 0px;
+    color: white;
+    text-align: center center;
+}
+
+        /* Finaliza Clientes*/
+
+        /* Inicio del Footer*/
+footer{
+    width: 100%;
+    height: 300px;
+    color: rgb(0, 19, 19);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(40, 41, 43);
+}
+
+footer .container-footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: rgb(67, 115, 187,);
+}
+        /* Fin del Footer*/
+
+        /* Inicia Formulario Contacto*/
+
+.formulario{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.formulario h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.formulario p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.formulario a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.formulario a i{
+    color:rgb(0, 81, 255);
+    margin-right: 10px;
+}
+
+.formulario form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.formulario form textarea{
+    max-width: 500px;
+    min-height: 500px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.formulario .btn-enviar{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    background: rgb(67, 115, 187);
+    color: black;
+    border-radius: 5px;
+}
+
+.formulario .btn-enviar:hover{
+    background-color: rgb(38, 67, 110);
+}
+
+        /* Finaliza Formulario Contacto*/
+
+        /*Media Query :c */
+
+@media (min-width: 720px) {
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #quienes-somos .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #quienes-somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienes-somos .img-quienes{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url(imagenes/empresa2.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 350px;
+    }
+
+    #servicios .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #servicios .carta1{
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    #servicios .carta2{
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    #servicios .carta3{
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    #clientes{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url(imagenes/clientes.jpg);
+        background-size: cover;
+    }
+
+    #clientes .nuestros-clientes{
+        text-align: initial;
+    }
+
+    #clientes ul{
+        margin-left: 50px;
+    }
+
+}
